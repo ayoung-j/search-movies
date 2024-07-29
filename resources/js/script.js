@@ -16,7 +16,7 @@ const options = {
     },
 };
 
-fetch("https://api.themoviedb.org/3/movie/top_rated?language=ko-KR&page=1&append_to_response=images&include_image_language=ko,null", options)
+fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1&append_to_response=images&include_image_language=en,null", options)
     .then((response) => response.json())
     // .then((response) => console.log(response))
     .then((data) => {
@@ -50,8 +50,8 @@ function createMovieItem(row) {
     const item = document.createElement("li");
 
     item.className = "movie-item";
-    item.style.cssText = `background-image:url(https://image.tmdb.org/t/p/w500${row.poster_path})`;
     item.innerHTML = `
+        <div class="movie-item__img" style="background-image:url(https://image.tmdb.org/t/p/w500${row.poster_path})"></div>
         <div class="movie-item__con">
             <div class="movie-item__tit">${row.title}</div>
             <div class="movie-item__info">
@@ -72,8 +72,8 @@ function createMovieItem(row) {
 
 // 영화 검색
 function searchMovie(query) {
-    const movieItem = document.querySelectorAll(".movie-item");
-    movieItem.forEach((item) => {
+    const movieItem = [...document.querySelectorAll(".movie-item")];
+    movieItem.map(function (item) {
         const title = item.querySelector(".movie-item__tit").textContent.toLowerCase();
         if (title.includes(query)) {
             item.style.display = "block";
@@ -81,6 +81,7 @@ function searchMovie(query) {
             item.style.display = "none";
         }
     });
+
     // 포커스
     mainSearchInput.focus();
     // 값 이동
