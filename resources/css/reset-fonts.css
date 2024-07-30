@@ -77,44 +77,6 @@ textarea:not([rows]) {
 :target {
     scroll-margin-block: 5ex;
 }
-html {
-    color: #fff;
-    background-color: #0d111b;
-    font-size: 62.5% !important;
-    font-family: "Pretendard", "Noto Sans KR", "Nanum Gothic", "Apple SD Gothic Neo", Helvetica, Arial, sans-serif;
-}
-@media screen and (min-width: 0\0) {
-    /* IE 9, IE 10, IE 11 */
-    :root,
-    html {
-        font-size: 10px;
-    }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    /* IE 10, IE 11 */
-    :root,
-    html {
-        font-size: 10px;
-    }
-}
-body {
-    min-height: 100vh;
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.4); /* 스크롤바 색상 */
-    border-radius: 12px; /* 스크롤바 둥근 테두리 */
-    background-clip: padding-box;
-    border: 5px solid transparent;
-}
-::-webkit-scrollbar-track {
-    background: #0d111b; /*스크롤바 뒷 배경 색상*/
-}
 /* material */
 .material-symbols-rounded {
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;

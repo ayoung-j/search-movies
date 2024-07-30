@@ -38,7 +38,7 @@
 .footer {
     font-size: 1.2rem;
     text-align: center;
-    color: #848a91;
+    color: var(--quaternary-color);
     padding: 60px 0 30px;
 }
 @media (min-width: 576px) {
@@ -106,7 +106,7 @@
     height: 40px;
     font-size: 1.6rem;
     color: #fff;
-    background-color: #1c212e;
+    background-color: var(--tertiary-color);
     padding: 10px 20px;
     border-radius: 4px;
 }
@@ -117,7 +117,7 @@
     width: 40px;
     height: 40px;
     color: #fff;
-    background-color: #fcc000;
+    background-color: var(--primary-color);
     border-radius: 4px;
 }
 .search__btn [class*="material-symbols"] {
@@ -201,7 +201,7 @@
 }
 .search-box__txt {
     font-size: 1.4rem;
-    color: #848a91;
+    color: var(--quaternary-color);
     margin-top: 20px;
 }
 .search-box .search {
@@ -215,7 +215,7 @@
 }
 .search-box .search__input {
     width: calc(100% - 60px);
-    background-color: #1c212e;
+    background-color: var(--tertiary-color);
 }
 .search-box .search__btn {
     width: 50px;
@@ -283,7 +283,7 @@
 .movie-item__img {
     width: 100%;
     aspect-ratio: 2/3;
-    background-color: #848a91;
+    background-color: var(--quaternary-color);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -339,7 +339,7 @@
 .no-results {
     font-size: 2rem;
     text-align: center;
-    background-color: #0d111b;
+    background-color: var(--secondary-color);
     padding: 100px 0;
     border-radius: 4px;
 }

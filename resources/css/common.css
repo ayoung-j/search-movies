@@ -1,3 +1,47 @@
+:root {
+    --primary-color: #fcc000;
+    --secondary-color: #0D111B;
+    --tertiary-color: #1C212E;
+    --quaternary-color: #848A91;
+}
+html {
+    color: #fff;
+    background-color: var(--secondary-color);
+    font-size: 62.5% !important;
+    font-family: "Pretendard", "Noto Sans KR", "Nanum Gothic", "Apple SD Gothic Neo", Helvetica, Arial, sans-serif;
+}
+@media screen and (min-width: 0\0) {
+    /* IE 9, IE 10, IE 11 */
+    :root,
+    html {
+        font-size: 10px;
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* IE 10, IE 11 */
+    :root,
+    html {
+        font-size: 10px;
+    }
+}
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4); /* 스크롤바 색상 */
+    border-radius: 12px; /* 스크롤바 둥근 테두리 */
+    background-clip: padding-box;
+    border: 5px solid transparent;
+}
+::-webkit-scrollbar-track {
+    background: var(--secondary-color); /*스크롤바 뒷 배경 색상*/
+}
 .container {
     width: 100%;
     max-width: calc(1200px + 12px * 2);
@@ -5,7 +49,7 @@
     margin: 0 auto;
 }
 .primary-color {
-    color: #fcc000;
+    color: var(--primary-color);
 }
 .sr-only {
     border: 0;

@@ -35,6 +35,9 @@
         <link href="./resources/css/reset-fonts.css" rel="stylesheet" />
         <link href="./resources/css/common.css" rel="stylesheet" />
         <link href="./resources/css/style.css" rel="stylesheet" />
+
+        <!-- script -->
+        <script type="module" src="./resources/js/main.js"></script>
     </head>
 
     <body>
@@ -45,10 +48,10 @@
                         <h1 class="logo"><span class="sr-only">Film Awards</span></h1>
                         <div class="logo-txt">Film Awards</div>
                     </a>
-                    <div class="search">
+                    <form class="search">
                         <input type="text" class="search__input" id="header-search-input" placeholder="영화 제목을 입력해주세요" autofocus />
                         <button type="button" class="search__btn"><span class="material-symbols-rounded"> search </span></button>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div id="contents">
@@ -60,10 +63,10 @@
                                 <div class="search-box__tit"><span class="primary-color">최고 평점</span><br />영화 컬렉션</div>
                                 <div class="search-box__txt">평점순으로 정렬된 영화 목록을 확인해보세요.</div>
                             </div>
-                            <div class="search">
+                            <form class="search">
                                 <input type="text" class="search__input" id="main-search-input" placeholder="영화 제목을 입력해주세요" autofocus />
                                 <button type="button" class="search__btn"><span class="material-symbols-rounded"> search </span></button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </section>
@@ -79,8 +82,5 @@
                 </div>
             </div>
         </div>
-
-        <!-- script -->
-        <script src="./resources/js/script.js"></script>
     </body>
 </html>
