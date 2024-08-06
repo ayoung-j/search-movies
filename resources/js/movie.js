@@ -1,6 +1,6 @@
 export const generateMovie = async () => {
-    const movieItems = document.querySelector(".movie-items");
     const rows = await fetchMovieDate();
+    const movieItems = document.querySelector(".movie-items");
 
     // 영화 리스트
     rows.forEach((row) => {

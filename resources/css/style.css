@@ -336,13 +336,6 @@
     -webkit-box-orient: vertical;
     word-break: keep-all;
 }
-.no-results {
-    font-size: 2rem;
-    text-align: center;
-    background-color: var(--secondary-color);
-    padding: 100px 0;
-    border-radius: 4px;
-}
 @media (min-width: 390px) {
     .movie-items {
         grid-template-columns: repeat(2, 1fr);
